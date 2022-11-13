@@ -1,7 +1,15 @@
 FROM node
-RUN npm install -g create-react-app
-RUN create-react-app my-app
-WORKDIR /my-app
+USER node
+WORKDIR /home/node/
+COPY  package.json .
+COPY package-lock.json .
+USER root
+RUN npm install
+WORKDIR /home/node/app
 CMD ["npm", "start"]
+
+
+
+
 
 

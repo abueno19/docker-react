@@ -10,11 +10,31 @@ services:
     ports:
       - "3050:80"
   node:
+
     build:
       dockerfile: Dockerfile
       context: ./node
     ports:
       - "3000"
+    entrypoint: npm start
     volumes:
-      - /app/node_modules:/app/node_modules
-      - ./client:/app
+      - ./public:/home/node/public
+      - ./src:/home/node/src
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+      
+
+
+
+
