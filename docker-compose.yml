@@ -18,8 +18,8 @@ services:
       - "3000"
     entrypoint: npm start
     volumes:
-      - ./public:/home/node/public
-      - ./src:/home/node/src
+      - ./node/public:/home/node/public
+      - ./node/src:/home/node/src
 
 
 
