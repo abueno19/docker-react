@@ -1,1 +1,1 @@
-# En este repositorio vamos a aprender a usar React poco a poco
+# Entrega de react de 3 componentes de react con docker incluido
