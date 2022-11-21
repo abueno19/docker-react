@@ -1,4 +1,4 @@
-FROM node
+FROM node:18.12.1
 USER node
 WORKDIR /home/node/
 COPY  package.json .
