@@ -2,16 +2,6 @@ import './App.css';
 import {useState} from 'react';
 function App() {
   
-  const date = new Date();
-  const hours = date.getHours();
-  let timeOfDay;
-  if (hours > 8 && hours < 14) {
-    timeOfDay = "Buenos dias";
-  } else if (hours >= 14 && hours < 20) {
-    timeOfDay = "Buenas tardes";
-  } else {
-    timeOfDay = "Buenas noches";
-  }
   return (
     <di>
       <h1>React App</h1>
@@ -29,9 +19,9 @@ function Hora(respuesta=0) {
   const date = new Date();
   const hours = date.getHours();
   let timeOfDay;
-  if (hours > 8 && hours < 14) {
+  if (hours > 8 && hours < 12) {
     timeOfDay = "Buenos dias";
-  } else if (hours >= 14 && hours < 20) {
+  } else if (hours >= 12 && hours < 21) {
     timeOfDay = "Buenas tardes";
   } else {
     timeOfDay = "Buenas noches";
