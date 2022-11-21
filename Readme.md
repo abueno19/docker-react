@@ -1,1 +1,2 @@
-# En este repositorio vamos a aprender a usar React poco a poco
+# Actividad UD2 A2 Instalación del entorno local
+
