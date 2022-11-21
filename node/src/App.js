@@ -21,7 +21,7 @@ function Hora(respuesta=0) {
   let timeOfDay;
   if (hours > 8 && hours <= 12) {
     timeOfDay = "Buenos dias";
-  } else if (hours > 12 && hours < 21) {
+  } else if (hours > 12 && hours <= 21) {
     timeOfDay = "Buenas tardes";
   } else {
     timeOfDay = "Buenas noches";
