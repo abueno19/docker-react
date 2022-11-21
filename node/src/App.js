@@ -23,8 +23,10 @@ function Hora(respuesta=0) {
     timeOfDay = "Buenos dias";
   } else if (hours > 12 && hours <= 21) {
     timeOfDay = "Buenas tardes";
-  } else {
+  } else if (hours > 21 && hours <= 0) {
     timeOfDay = "Buenas noches";
+  }else{
+    timeOfDay = "A dormir";
   }
   if(respuesta==1){
     return timeOfDay;
