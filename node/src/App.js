@@ -19,14 +19,14 @@ function Hora(respuesta=0) {
   const date = new Date();
   const hours = date.getHours();
   let timeOfDay;
-  if (hours > 8 && hours <= 12) {
-    timeOfDay = "Buenos dias";
-  } else if (hours > 12 && hours <= 21) {
-    timeOfDay = "Buenas tardes";
-  } else if (hours > 21 && hours <= 0) {
-    timeOfDay = "Buenas noches";
-  }else{
+  if (hours <= 8 ) {
     timeOfDay = "A dormir";
+  } else if (hours <= 12) {
+    timeOfDay = "Buenos dias";
+  } else if (hours <= 21) {
+    timeOfDay = "Buenas tardes";
+  }else{
+    timeOfDay = "Buenas noches";
   }
   if(respuesta==1){
     return timeOfDay;
