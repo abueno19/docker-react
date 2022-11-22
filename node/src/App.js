@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React por Antonio Julian Bueno Fuentes
         </a>
       </header>
     </div>

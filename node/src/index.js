@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
+
 const Square = (props)=> {
   return (
     <button className="square" onClick={props.onClick}>
@@ -149,5 +150,6 @@ class Game extends React.Component {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<Game />);
+
 
 
