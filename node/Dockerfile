@@ -6,7 +6,7 @@ COPY package-lock.json .
 USER root
 RUN npm install
 WORKDIR /home/node/app
-CMD ["npm", "start"]
+CMD ["npm", "run","debug"]
 
 
 
